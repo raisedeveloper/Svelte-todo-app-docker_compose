@@ -67,19 +67,7 @@ CREATE TABLE IF NOT EXISTS todos (
 GRANT ALL PRIVILEGES ON todoapp.* TO 'todo'@'%';
 FLUSH PRIVILEGES;
 
-
 ---
-
-🐬 db/init.sql (초기 테이블 & 권한 설정)
-CREATE TABLE IF NOT EXISTS todos (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  task VARCHAR(255) NOT NULL,
-  completed BOOLEAN DEFAULT FALSE,
-  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-
-GRANT ALL PRIVILEGES ON todoapp.* TO 'todo'@'%';
-FLUSH PRIVILEGES;
 
 🐘 backend/config.php (DB 연결 설정)
 <?php
