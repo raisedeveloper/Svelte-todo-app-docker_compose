@@ -43,12 +43,13 @@ Jenkins를 통한 자동화로 **Push 기반의 빌드 & 배포 자동화 환경
 </p>  
 
 ### 📦 구축 스택  
-- GitHub Webhook + ngrok 터널링  
-- Jenkins Freestyle Job 자동화  
-- Git SCM Polling 기반 변경사항 감지  
-- Docker Compose로 전체 서비스 배포  
+- GitHub Webhook + ngrok를 이용한 Jenkins 트리거  
+- Jenkins Freestyle Job을 통한 빌드 & 배포 자동화  
+- Git SCM Polling으로 변경사항 감지 후 빌드 실행  
+- Docker Compose 기반 프론트엔드(Svelte), 백엔드(PHP), DB(MySQL) 통합 배포  
 
-> 코드 푸시 → Jenkins 자동 트리거 → Docker 기반 서비스 자동 빌드 & 배포까지 전체 흐름이 자동화되었습니다.  
+> GitHub에서 코드 Push 시, Webhook을 통해 Jenkins가 트리거되어  
+> 변경된 소스를 기반으로 Docker 이미지 빌드 및 서비스 재배포까지 자동화된 파이프라인을 구축했습니다.  
 
 ---
 
