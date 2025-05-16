@@ -1,7 +1,7 @@
 # 📝 Docker + Jenkins 기반 To-Do List Fullstack 자동배포 프로젝트
 
 ## 📦 프로젝트 개요
-프론트엔드(Svelte), 백엔드(PHP), 데이터베이스(MySQL)를 Docker Compose로 배포하여 운영하는 풀스택 To-Do List 애플리케이션입니다.  <br />
+프론트엔드(Svelte), 백엔드(PHP), 데이터베이스(MySQL)를 Docker Compose로 배포하여 운영하는 풀스택 To-Do List 애플리케이션입니다.  
 XAMPP 같은 로컬 서버 없이, 완전한 컨테이너 기반으로 개발 및 배포 환경을 구축했습니다.
 
 ## 🛠️ Tech Stack
@@ -51,18 +51,18 @@ XAMPP 같은 로컬 서버 없이, 완전한 컨테이너 기반으로 개발 �
 ---
 
 ## 🏗️ 프로젝트 구조
-todoapp/ <br />
-├── docker-compose.yml # 전체 서비스 정의 <br />
-├── db/ # DB 초기화 및 권한 설정 <br />
-│ └── init.sql <br />
-├── backend/ # PHP API 서버 <br />
-│ ├── Dockerfile <br />
-│ ├── config.php <br />
-│ └── getTodos.php / addTodo.php / deleteTodo.php <br />
-├── frontend/ # Svelte 프론트엔드 <br />
-│ ├── Dockerfile <br />
-│ ├── src/ <br />
-│ └── public/ <br />
+todoapp/  
+├── docker-compose.yml # 전체 서비스 정의  
+├── db/ # DB 초기화 및 권한 설정  
+│ └── init.sql  
+├── backend/ # PHP API 서버  
+│ ├── Dockerfile  
+│ ├── config.php  
+│ └── getTodos.php / addTodo.php / deleteTodo.php  
+├── frontend/ # Svelte 프론트엔드  
+│ ├── Dockerfile  
+│ ├── src/  
+│ └── public/  
 
 ---
 
