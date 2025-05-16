@@ -23,7 +23,6 @@ todoapp/
 ---
 
 ## 🐳 docker-compose.yml 주요 설정
-```yaml
 services:
   db:
     image: mysql:8.0
@@ -54,6 +53,8 @@ services:
     depends_on:
       - backend
 
+---
+
 🐬 db/init.sql (초기 테이블 & 권한 설정)
 CREATE TABLE IF NOT EXISTS todos (
   id INT AUTO_INCREMENT PRIMARY KEY,
@@ -79,23 +80,28 @@ if ($conn->connect_error) {
 }
 ?>
 
+---
+
 📡 frontend API 연결 예시 (Svelte)
 const res = await fetch('http://localhost:8082/getTodos.php');
 
+---
+
 🛠️ 실행 방법
-bash
-복사
-편집
 # 1. 프로젝트 폴더로 이동
 cd ~/todoapp
 
 # 2. Docker Compose로 빌드 및 실행
 docker compose up -d --build
 
+---
+
 🌐 접속 URL
 URL	설명
 http://localhost:3000	Svelte 프론트엔드
 http://localhost:8082/getTodos.php	PHP API 백엔드
+
+---
 
 🚀 프로젝트 주요 경험
 프론트(Svelte) + 백엔드(PHP) + DB(MySQL) 통합 운영
