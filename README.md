@@ -125,8 +125,8 @@ docker compose up -d --build
 ---
 
 🌐 접속 URL  
-http://localhost:3000	Svelte 프론트엔드  
-http://localhost:8082/getTodos.php	PHP API 백엔드  
+http://localhost:3000	- Svelte 프론트엔드  
+http://localhost:8082/getTodos.php - PHP API 백엔드  
 
 ---
 
