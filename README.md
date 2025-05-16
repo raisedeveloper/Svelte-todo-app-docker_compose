@@ -2,10 +2,10 @@
 
 ## 📦 프로젝트 개요
 프론트엔드(Svelte), 백엔드(PHP), 데이터베이스(MySQL)를 Docker Compose로 통합 배포하고,  
-Jenkins를 활용해 **GitHub에서 변경사항(Push)이 발생하면 자동으로 빌드 & 배포가 트리거되는 CI/CD 파이프라인**을 구축한 풀스택 To-Do List 애플리케이션입니다.  
+GitHub Webhook과 Jenkins를 연계하여 **코드 Push 시 빌드 & 배포를 자동으로 수행하는 CI/CD 파이프라인**을 구축한 풀스택 To-Do List 애플리케이션입니다.  
 
-XAMPP 같은 로컬 서버 없이, 완전한 컨테이너 기반 개발/운영 환경을 구현했으며,  
-Jenkins를 통한 자동화로 **Push 기반의 빌드 & 배포 자동화 환경(DevOps)를 완성**했습니다.  
+XAMPP와 같은 로컬 서버 없이, 컨테이너 기반으로 개발 및 운영 환경을 일원화하고,  
+Jenkins를 통해 **Push를 트리거로 하는 자동 빌드 & 배포 환경(DevOps)** 을 구성했습니다.  
 
 ---
 
@@ -48,8 +48,8 @@ Jenkins를 통한 자동화로 **Push 기반의 빌드 & 배포 자동화 환경
 - Git SCM Polling으로 변경사항 감지 후 빌드 실행  
 - Docker Compose 기반 프론트엔드(Svelte), 백엔드(PHP), DB(MySQL) 통합 배포  
 
-> GitHub에서 코드 Push 시, Webhook을 통해 Jenkins가 트리거되어  
-> 변경된 소스를 기반으로 Docker 이미지 빌드 및 서비스 재배포까지 자동화된 파이프라인을 구축했습니다.  
+> GitHub에서 코드 Push 시, Webhook을 통해 Jenkins가 자동으로 빌드를 트리거하고  
+> 변경된 소스를 기반으로 Docker 이미지 빌드 및 서비스 재배포까지 자동화된 배포 파이프라인을 구축했습니다.  
 
 ---
 
