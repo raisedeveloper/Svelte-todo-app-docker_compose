@@ -1,5 +1,4 @@
-## Jenkins Test
-# 📝 Docker 기반 To-Do List Fullstack 프로젝트
+# 📝 Docker + Jenkins 기반 To-Do List Fullstack 자동배포 프로젝트
 
 ## 📦 프로젝트 개요
 프론트엔드(Svelte), 백엔드(PHP), 데이터베이스(MySQL)를 Docker Compose로 배포하여 운영하는 풀스택 To-Do List 애플리케이션입니다.  <br />
@@ -29,6 +28,25 @@ XAMPP 같은 로컬 서버 없이, 완전한 컨테이너 기반으로 개발 �
     <td><img src="https://img.shields.io/badge/WSL2-008080?style=for-the-badge&logo=windows&logoColor=white" /></td>
   </tr>
 </table>
+
+---
+
+## 🚀 CI/CD with Jenkins
+
+<p align="center">
+  <img src="https://www.jenkins.io/images/logos/jenkins/jenkins.png" width="120" alt="Jenkins logo">
+</p>
+
+본 프로젝트는 GitHub와 Jenkins를 연동하여  
+**커밋(Push) 시 자동으로 빌드 & 배포가 수행되는 CI/CD 파이프라인**을 구축했습니다.
+
+### 📦 구축 스택
+- GitHub Webhook + ngrok 터널링
+- Jenkins Freestyle Job 자동화
+- Git SCM Polling 기반 변경사항 감지
+- Docker Compose로 전체 서비스 배포
+
+> 코드 푸시 → Jenkins 자동 트리거 → Docker 기반 서비스 자동 빌드 & 배포까지 전체 흐름이 자동화되었습니다.
 
 ---
 
