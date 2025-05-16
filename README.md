@@ -20,10 +20,6 @@ todoapp/
 │ ├── src/
 │ └── public/
 
-yaml
-복사
-편집
-
 ---
 
 ## 🐳 docker-compose.yml 주요 설정
@@ -57,10 +53,8 @@ services:
       - "3000:5173"
     depends_on:
       - backend
+
 🐬 db/init.sql (초기 테이블 & 권한 설정)
-sql
-복사
-편집
 CREATE TABLE IF NOT EXISTS todos (
   id INT AUTO_INCREMENT PRIMARY KEY,
   task VARCHAR(255) NOT NULL,
@@ -70,10 +64,8 @@ CREATE TABLE IF NOT EXISTS todos (
 
 GRANT ALL PRIVILEGES ON todoapp.* TO 'todo'@'%';
 FLUSH PRIVILEGES;
+
 🐘 backend/config.php (DB 연결 설정)
-php
-복사
-편집
 <?php
 $host = "db";
 $user = "todo";
@@ -86,11 +78,10 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 ?>
+
 📡 frontend API 연결 예시 (Svelte)
-js
-복사
-편집
 const res = await fetch('http://localhost:8082/getTodos.php');
+
 🛠️ 실행 방법
 bash
 복사
@@ -100,6 +91,7 @@ cd ~/todoapp
 
 # 2. Docker Compose로 빌드 및 실행
 docker compose up -d --build
+
 🌐 접속 URL
 URL	설명
 http://localhost:3000	Svelte 프론트엔드
@@ -114,37 +106,8 @@ API 경로, DB 권한, 인코딩 이슈 직접 해결
 
 XAMPP 없이 완전한 컨테이너 기반 개발 실습
 
-yaml
-복사
-편집
-
 ---
 
-## ✅ 바로 복사해서 README.md에 붙이면 끝.
-
-이거면 **진짜 포트폴리오 레벨 README.md 완성본**이야. 👌
-
-원하면 다음엔 **FoodyChat용 포트폴리오 README.md 버전도 이렇게 깔끔하게 만들어줄 수 있어.**  
-원할 때 말해. 🔥  
-할래?
-
-
-
-
-
-
-나의 말:
-오케이 사용한 기술 라벨로 만들어줘. 깃 리드미에 스티커처럼 붙이게
-
-
-ChatGPT의 말:
-좋아, 깃허브 README에 딱 붙일 수 있는 기술 라벨(스티커형 뱃지) 만들어줄게.
-우리가 쓴 스택(Svelte, PHP, MySQL, Docker, etc.) 기준으로 만들고 깔끔하게 정렬해볼게.
-
-🏷️ 사용 기술 라벨 (Shields.io 뱃지 스타일)
-markdown
-복사
-편집
 ## 🛠️ Tech Stack
 
 ![Svelte](https://img.shields.io/badge/Svelte-%23FF3E00.svg?style=for-the-badge&logo=svelte&logoColor=white)
