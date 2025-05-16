@@ -4,6 +4,31 @@
 프론트엔드(Svelte), 백엔드(PHP), 데이터베이스(MySQL)를 Docker Compose로 배포하여 운영하는 풀스택 To-Do List 애플리케이션입니다.  <br />
 XAMPP 같은 로컬 서버 없이, 완전한 컨테이너 기반으로 개발 및 배포 환경을 구축했습니다.
 
+## 🛠️ Tech Stack
+
+<table>
+  <tr>
+    <td><img src="https://img.shields.io/badge/Svelte-%23FF3E00.svg?style=for-the-badge&logo=svelte&logoColor=white" /></td>
+    <td><img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" /></td>
+  </tr>
+  <tr>
+    <td><img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" /></td>
+    <td><img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" /></td>
+  </tr>
+  <tr>
+    <td><img src="https://img.shields.io/badge/Apache-D22128?style=for-the-badge&logo=apache&logoColor=white" /></td>
+    <td><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" /></td>
+  </tr>
+  <tr>
+    <td><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" /></td>
+    <td><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" /></td>
+  </tr>
+  <tr>
+    <td><img src="https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" /></td>
+    <td><img src="https://img.shields.io/badge/WSL2-008080?style=for-the-badge&logo=windows&logoColor=white" /></td>
+  </tr>
+</table>
+
 ---
 
 ## 🏗️ 프로젝트 구조
@@ -113,31 +138,3 @@ Docker Compose를 통한 멀티 컨테이너 배포 환경 구축
 API 경로, DB 권한, 인코딩 이슈 직접 해결  
 
 XAMPP 없이 완전한 컨테이너 기반 개발 실습  
-
----
-
-## 🛠️ Tech Stack
-
-<table>
-  <tr>
-    <td><img src="https://img.shields.io/badge/Svelte-%23FF3E00.svg?style=for-the-badge&logo=svelte&logoColor=white" /></td>
-    <td><img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" /></td>
-  </tr>
-  <tr>
-    <td><img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" /></td>
-    <td><img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" /></td>
-  </tr>
-  <tr>
-    <td><img src="https://img.shields.io/badge/Apache-D22128?style=for-the-badge&logo=apache&logoColor=white" /></td>
-    <td><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" /></td>
-  </tr>
-  <tr>
-    <td><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" /></td>
-    <td><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" /></td>
-  </tr>
-  <tr>
-    <td><img src="https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" /></td>
-    <td><img src="https://img.shields.io/badge/WSL2-008080?style=for-the-badge&logo=windows&logoColor=white" /></td>
-  </tr>
-</table>
-
