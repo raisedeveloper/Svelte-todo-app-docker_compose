@@ -1,7 +1,3 @@
-📝 README.md (배포용)
-markdown
-복사
-편집
 # 📝 Docker 기반 To-Do List Fullstack 프로젝트
 
 ## 📦 프로젝트 개요
