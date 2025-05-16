@@ -1,0 +1,15 @@
+CREATE DATABASE IF NOT EXISTS todoapp CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+
+USE todoapp;
+
+CREATE TABLE IF NOT EXISTS todos (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  task VARCHAR(255) NOT NULL,
+  completed BOOLEAN DEFAULT FALSE,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+
+GRANT ALL PRIVILEGES ON todoapp.* TO 'todo'@'%';
+FLUSH PRIVILEGES;
+
+INSERT INTO todos (task, completed) VALUES ('첫 번째 할 일', false);

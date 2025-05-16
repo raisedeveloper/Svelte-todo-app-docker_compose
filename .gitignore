@@ -1,0 +1,9 @@
+# Node.js 패키지 폴더
+node_modules/
+
+# Svelte 빌드 결과물
+public/build/
+
+# Mac 숨김파일 (윈도우면 상관없지만 예의상)
+.DS_Store
+
