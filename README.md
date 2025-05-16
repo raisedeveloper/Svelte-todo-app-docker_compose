@@ -7,18 +7,18 @@ XAMPP 같은 로컬 서버 없이, 완전한 컨테이너 기반으로 개발 �
 ---
 
 ## 🏗️ 프로젝트 구조
-todoapp/
-├── docker-compose.yml # 전체 서비스 정의
-├── db/ # DB 초기화 및 권한 설정
-│ └── init.sql
-├── backend/ # PHP API 서버
-│ ├── Dockerfile
-│ ├── config.php
-│ └── getTodos.php / addTodo.php / deleteTodo.php
-├── frontend/ # Svelte 프론트엔드
-│ ├── Dockerfile
-│ ├── src/
-│ └── public/
+todoapp/ <br />
+├── docker-compose.yml # 전체 서비스 정의 <br />
+├── db/ # DB 초기화 및 권한 설정 <br />
+│ └── init.sql <br />
+├── backend/ # PHP API 서버 <br />
+│ ├── Dockerfile <br />
+│ ├── config.php <br />
+│ └── getTodos.php / addTodo.php / deleteTodo.php <br />
+├── frontend/ # Svelte 프론트엔드 <br />
+│ ├── Dockerfile <br />
+│ ├── src/ <br />
+│ └── public/ <br />
 
 ---
 
